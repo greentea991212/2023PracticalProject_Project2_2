@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="view.css" />
+  </head>
+  <script>
+    function onConfirm() {
+      if (confirm("정말 삭제하시겠습니까?")) {
+        alert("삭제가 완료되었습니다.");
+      }
+    }
+
+    function goEdit() {
+      location.href = "/Edit/edit.html";
+    }
+  </script>
+  <body>
+    <div class="container">
+      <div class="items">
+        <div class="items-head">
+          <p>주문 정보</p>
+          <hr />
+        </div>
+        <div class="items-body">
+          <div class="items-body-content">
+            <span>김민혁</span>
+            <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="items-body-content">
+            <span>010-1234-5678</span>
+            <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="items-body-content">
+            <span>로뎀관</span>
+            <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="items-body-content">
+            <span>치킨-치코파닭</span>
+            <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="items-body-content">
+            <span>4명</span>
+            <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="items-body-content">
+            <span>오후 02:30</span>
+            <i class="fa fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="btns">
+          <button onclick="goEdit()">Edit</button>
+          <input onclick="onConfirm()" type="reset" value="Delete" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

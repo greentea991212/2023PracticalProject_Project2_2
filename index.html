@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script>
+      function goToView(){
+        location.href='/View/view.html'
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wholeContents">
+      <div class="webName">
+        <img class="logo" src="asset/delivery.png" />
+        <h2 id="title">같이 먹자!</h2>
+      </div>
+        <button class="addTo"><a href="Add/add.html">ADD</a></button>
+      <div class="contents">
+        <div class="listTitle">
+          <p>이름</p>
+          <p class="foodList">음식</p>
+          <p>수령 장소</p>
+        </div>
+        <ul class="oreders">
+          <li onclick = "goToView()" class="order">
+            <h4 class="name">최XX</h4>
+            <p class="menu">치코 파닭</p>
+            <p class="place">야외공연장</p>
+          </li>
+          <li onclick = "goToView()" class="order">
+            <h4 class="name">김XX</h4>
+            <p class="menu">공차</p>
+            <p class="place">코너스톤홀</p>
+          </li>
+          <li onclick = "goToView()" class="order">
+            <h4 class="name">이XX</h4>
+            <p class="menu">반올림 피자</p>
+            <p calss="place">느헤미야홀</p>
+          </li>
+          <li onclick = "goToView()" class="order">
+            <h4 class="name">정XX</h4>
+            <p class="menu">행복한 마라탕</p>
+            <p class="place">하용조관</p>
+          </li>
+        </ul>
+        <div class="page">
+          <ul class="pagination">
+            <li id="pageNum">«</li>
+            <li id="pageNum">1</li>
+            <li id="pageNum">2</li>
+            <li id="pageNum">»</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

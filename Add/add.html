@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="add.css" />
+    <script>
+            function validateForm() {
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let address = document.getElementById("address").value;
+    let foods = document.getElementById("foods").value;
+    let restaurant = document.getElementById("restaurant").value;
+    let people = document.getElementById("people").value;
+    let time = document.getElementById("time").value;
+    if (name === "") {
+        alert("이름을 입력해주세요.");
+        return false;
+    }
+    if (phone === "") {
+        alert("전화번호를 입력해주세요.");
+        return false;
+    }
+    if (address === "") {
+        alert("수령장소를 입력해주세요.");
+        return false;
+    }
+    if (foods === "") {
+        alert("음식 종류를 입력해주세요.");
+        return false;
+    }
+    if (restaurant === "") {
+        alert("음식점을 입력해주세요.");
+        return false;
+    }
+    if (people === "") {
+        alert("모집인원을 입력해주세요.");
+        return false;
+    }
+    if (time === "") {
+        alert("주문예정시간을 입력해주세요.");
+        return false;
+    }
+
+    return true;
+}
+    </script>
+    </head>
+    <body>
+        <div>
+        <h2>주문 정보 입력</h2>
+        <form id="orderForm" onsubmit="return validateForm()">
+            <fieldset>
+            <legend>주문자 정보</legend>
+            <div class = "inputSet">
+                <div class = "information">
+                    <label for="name">이름</label>
+                    <input type="text" id="name"/><br>
+                </div>
+                <div class = "information">
+                    <label for="phone">전화번호</label>
+                    <input
+                    type="tel"
+                    id="phone"
+                    pattern="[0-1]{3}-[0-9]{4}-[0-9]{4}"
+                    placeholder="'-' 포함"
+                    id = "phone"
+                    />
+                </div>
+                <div class = "information">
+                    <label for="address">수령장소</label>
+                    <select name= "address" id = "address">
+                        <option value="1">야외공연장</option>
+                        <option value="2">학관</option>
+                        <option value="3">뉴턴홀</option>
+                        <option value="4">코너스톤홀</option>
+                        <option value="5">현동홀</option>
+                        <option value="6">비전관</option>
+                        <option value="7">로뎀관</option>
+                        <option value="8">하용조관</option>
+                        <option value="9">은혜관</option>
+                    </select>
+                </div>
+                </div>
+            </fieldset>
+            <fieldset>
+            <legend>음식 정보</legend>
+            <div class = "inputSet">
+                <div class = "information">
+                    <label for="foods">종류</label>
+                    <select name = "foods" id = "foods">
+                        <option value="1">찜/탕/찌개</option>
+                        <option value="2">돈까스/회/일식</option>
+                        <option value="3">피자</option>
+                        <option value="4">/구이</option>
+                        <option value="5">양식고기</option>
+                        <option value="6">치킨</option>
+                        <option value="7">중국</option>
+                        <option value="8">분식</option>
+                        <option value="9">카페/디자인</option>
+                    </select><br>
+                </div>
+                <div class = "information">
+                    <label for="restaurant">음식점</label>
+                    <input name = "restaurant" type="text" id = "restaurant">
+                    <br>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="etc">
+            <legend>추가 사항</legend>
+            <div class = "information">
+                <label for="people">모집인원</label>
+                <select name = "people" id = "people">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select><br>
+            </div>
+            <div class = "information">
+                <label for = "time">주문예정시간</label>
+                <input type="time" id = "time"> </input>
+            </div>
+        </fieldset>
+        <div class="btns">
+            <input type ="submit" onclick = "validateForm()"  value="Submit"/>
+            <input type = "reset" value="Delete"/>
+        </div>
+        </form>
+        </div>
+    </body>
+    </html>

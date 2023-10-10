@@ -1,0 +1,166 @@
+.wholeContents {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+
+.webName{
+    
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0p;
+}
+
+#title{
+
+    font-size: 16px;
+    margin: 0px;
+}
+
+.logo{
+
+    width: 120px;
+    height: 120px;
+}
+
+ul{
+
+    list-style: none;
+    margin-top: 16px;
+    height: 700ppx;
+}
+
+.addTo{
+
+    width: 70px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    color: #E6E6E6;
+    cursor: pointer;
+    font-size: larger;
+    position: relative;
+    margin-left: 1230px;
+}
+
+
+.addTo:hover{
+
+    background-color: darkgray;
+    color: black;
+}
+.contents {
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    display: block;
+    width: 1300px;
+    height: 615px;
+    border: 3px solid;
+    border-radius: 12px;
+    padding-top: 25px;
+    padding-left: 0px;
+}
+
+.order {
+    width: 1040px;
+    height: 70px;
+    border: 2px solid;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex; /* Flexbox를 사용하여 내부 요소를 정렬합니다. */
+    justify-content: space-between; /* 요소를 가로로 동일한 간격으로 정렬합니다. */
+    align-items: center; /* 요소를 세로로 가운데 정렬합니다. */
+    padding: 20px;
+    margin-left: 70px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.order:hover{
+
+    background-color: #E6E6E6;
+    border: none;
+}
+
+.listTitle{
+
+    width: 1040px;
+    height: 10px;
+    display: flex; /* Flexbox를 사용하여 내부 요소를 정렬합니다. */
+    justify-content: space-between; /* 요소를 가로로 동일한 간격으로 정렬합니다. */
+    align-items: center; /* 요소를 세로로 가운데 정렬합니다. */
+    padding: 20px;
+    margin-left: 110px;
+    padding-top: 0;
+    padding-bottom: 6px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.foodList{
+
+    margin-left: 30px;
+}
+.page {
+
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+        
+.pagination {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    column-gap: 2px;
+}
+        
+#pageNum {
+
+    border: 1px solid;
+    align-items: center;
+    border-radius: 3px;
+    width: 30px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+#pageNum:hover{
+
+    background-color: #E6E6E6;
+    cursor: pointer;
+}
+
+.name{
+
+    float: left;
+}
+.menu{
+
+    margin-left: 30px;
+}
+
+#place{
+
+    position: relative;
+    margin-left: 30px;
+}
+
+a{
+
+    text-decoration-line: none;
+    color: #E6E6E6;
+}
+
+a:visited{
+
+    color: #E6E6E6;
+}
