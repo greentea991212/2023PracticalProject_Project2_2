@@ -12,37 +12,48 @@
             let foods = document.getElementById("foods").value;
             let restaurant = document.getElementById("restaurant").value;
             let time = document.getElementById("time").value;
-    if (name === "") {
-        alert("이름을 입력해주세요.");
-        return false;
-    }
-    if (phone === "") {
-        alert("전화번호를 입력해주세요.");
-        return false;
-    }
-    if (address === "") {
-        alert("수령장소를 입력해주세요.");
-        return false;
-    }
-    if (foods === "") {
-        alert("음식 종류를 입력해주세요.");
-        return false;
-    }
-    if (restaurant === "") {
-        alert("음식점을 입력해주세요.");
-        return false;
-    }
-    if (people === "") {
-        alert("모집인원을 입력해주세요.");
-        return false;
-    }
-    if (time === "") {
-        alert("주문예정시간을 입력해주세요.");
-        return false;
-    }
+            if (name === "") {
+                alert("이름을 입력해주세요.");
+                return false;
+            }
+            if (phone === "") {
+                alert("전화번호를 입력해주세요.");
+                return false;
+            }
+            if (address === "") {
+                alert("수령장소를 입력해주세요.");
+                return false;
+            }
+            if (foods === "") {
+                alert("음식 종류를 입력해주세요.");
+                return false;
+            }
+            if (restaurant === "") {
+                alert("음식점을 입력해주세요.");
+                return false;
+            }
+            if (people === "") {
+                alert("모집인원을 입력해주세요.");
+                return false;
+            }
+            if (time === "") {
+                alert("주문예정시간을 입력해주세요.");
+                return false;
+            }
 
-    return true;
-}
+            return true;
+        }
+
+        function doSubmit(){
+
+        if(validateForm()){
+
+            confirm("게시물을 계시 하시겠습니까?")
+            return true;
+        }
+
+        return false;
+        }
     </script>
     </head>
     <body>
@@ -128,7 +139,7 @@
             </div>
         </fieldset>
         <div class="btns">
-            <input type ="submit" onclick = "validateForm()"  value="Submit"/>
+            <input type ="submit" onclick = "doSubmit()"  value="Submit"/>
             <input type = "reset" value="Delete"/>
         </div>
         </form>
