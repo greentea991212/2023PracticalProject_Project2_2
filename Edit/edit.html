@@ -9,10 +9,8 @@
         function validateForm() {
         let name = document.getElementById("name").value;
         let phone = document.getElementById("phone").value;
-        let address = document.getElementById("address").value;
         let foods = document.getElementById("foods").value;
         let restaurant = document.getElementById("restaurant").value;
-        let people = document.getElementById("people").value;
         let time = document.getElementById("time").value;
         if (name === "") {
             alert("이름을 입력해주세요.");
@@ -62,7 +60,7 @@
     <body>
         <div>
         <h2>주문 정보 입력</h2>
-        <form id="orderForm" onsubmit="return validateForm()">
+        <form id="orderForm">
             <fieldset>
             <legend>주문자 정보</legend>
             <div class = "inputSet">
